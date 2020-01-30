@@ -1,3 +1,7 @@
+# BookRental [Deployed](https://book-rental.margaretrainmo.now.sh)
+It is a program to calculate and print a statement of a customer's charges at a book rental store.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
