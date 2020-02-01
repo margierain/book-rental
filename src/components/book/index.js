@@ -14,9 +14,9 @@ const BookList = () => {
         })
     }, [])
 
-
   return (
-    <div className="App">
+    <div className="book">
+        <h2>Book on Rent</h2>
         {allBooks.length > 0 ? (
             <div>
                 {

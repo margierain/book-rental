@@ -18,15 +18,13 @@ export const Book = props => {
     const { register, handleSubmit } = methods;
 
   return (
-    <div>
+    <div className="items">
       <h2>{props.type}</h2>
       <FormContext {...methods}>
         <form onSubmit={handleSubmit(addToCart)}>
              <input type="number" name="duration" placeholder="Duration"  ref={register({ required: true })}/>
             <button type="submit" >Add to cart</button>
         </form>
-
-        {/* <button type="submit"onClick={addToCart} >Add to cart</button> */}
       </FormContext>
       <hr />
     </div>

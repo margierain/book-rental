@@ -1,0 +1,27 @@
+.app {
+    display: flex;
+    .cart, .bookList {
+        margin: 1em 4em;
+    }
+    .cart {
+        .items {
+            h1 {
+                margin-bottom: 1.5em;
+            }
+            h4 {
+                color: Green;
+            }
+        }
+
+    }
+    .bookList {
+        .book {
+            .items {
+                h2 {
+                    text-transform: capitalize;
+                    color: blue
+                }
+            }
+        }
+    }
+}
