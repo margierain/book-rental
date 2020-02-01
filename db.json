@@ -1,0 +1,28 @@
+{
+   "books": [
+        {
+            "id": 1,
+            "type": "novel"
+        },
+        {
+            "id": 2,
+            "type": "regular"
+        },
+        {
+            "id": 3,
+            "type": "fiction"
+        },
+        {
+            "id": 4,
+            "type": "regular"
+        },
+        {
+            "id": 5,
+            "type": "novel"
+        },
+        {
+            "id": 6,
+            "type": "fiction"
+        }
+   ]
+}
