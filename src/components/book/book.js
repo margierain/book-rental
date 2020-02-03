@@ -3,7 +3,7 @@ import { CartContext } from "../cart/cartContext";
 import { useForm, FormContext } from "react-hook-form";
 
 export const Book = props => {
-  let [, setCart] = useContext(CartContext);
+  let [, setCart] = React.useContext(CartContext);
 
   const addToCart = data => {
     setCart(cart => {
@@ -63,6 +63,7 @@ export const Book = props => {
           <div className="formInputs">
             <label>Number of rental days: </label>
             <input
+              className="formField"
               type="number"
               name="duration"
               value={values.duration}
@@ -72,6 +73,7 @@ export const Book = props => {
             />
             <label>Number of books your renting: </label>
             <input
+              className="formField"
               type="number"
               name="bookNum"
               value={values.bookNum}
@@ -79,7 +81,7 @@ export const Book = props => {
               onChange={handleInputChange}
               required
             />
-            <button type="submit">Add to cart</button>
+            <button className="SubmitField" type="submit">Add to cart</button>
           </div>
         </form>
       </FormContext>

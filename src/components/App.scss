@@ -1,25 +1,54 @@
 .app {
+    background: #F7D2A8;
     display: flex;
+    width: 100vw;
+    height: 100vh;
     .cart, .bookList {
         margin: 1em 4em;
     }
     .cart {
+        width: 50vw;
         .items {
             h1 {
                 margin-bottom: 1.5em;
+                color: #251605;
             }
             h4 {
-                color: Green;
+                color: #B7AA9C;
             }
         }
 
     }
     .bookList {
+        width: 50vw;
         .book {
             .items {
+                margin-top: 5em;
                 h2 {
                     text-transform: capitalize;
-                    color: blue
+                    color: #B7AA9C;
+                }
+                .formInputs {
+                    display: block;
+                    label {
+                        width: 15em;
+                    }
+                    .formField {
+                        padding: 5px 15px;
+                        margin: 2px 0;
+                        box-sizing: border-box;
+                        border: 1px solid #001;
+                        border-radius: 4px;
+                    }
+                    .SubmitField, .formField {
+                        border-radius: 25px;
+                    }
+                    .SubmitField {
+                        float: right;
+                        color: #F7D2A8;
+                        background-color: #C49156;
+                        display:block;
+                    }
                 }
             }
         }

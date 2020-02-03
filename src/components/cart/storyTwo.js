@@ -7,7 +7,7 @@ export const StoryTwoCart = () => {
   const fictionBookPrice = 3;
   const novelBookPrice = 1.5;
 
-  const [cart] = useContext(CartContext);
+  let [cart] = useContext(CartContext);
   let price = [];
 
   cart.map(item => {

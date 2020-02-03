@@ -6,17 +6,18 @@ const BookList = () => {
     let [allBooks, setAllBooks] = useState([]);
 
     useEffect(() => {
+        // eslint-disable-next-line
         allBooks = [];
-        axios.get(`http://localhost:3004/books`)
+        axios.get(`https://api.myjson.com/bins/1f5h3i`)
         .then(res => {
-            res.data.map((book) => allBooks.push(book))
+            res.data.books.map((book) => allBooks.push(book))
             return setAllBooks(allBooks);
         })
     }, [])
 
   return (
     <div className="book">
-        <h2>Book on Rent</h2>
+        <h2>Rent Book</h2>
         {allBooks.length > 0 ? (
             <div>
                 {

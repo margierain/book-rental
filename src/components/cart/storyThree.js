@@ -11,7 +11,7 @@ export const StoryThreeCart = () => {
     const minimunNovelBookCharge = 4.5; // if days rented is less than 3 days
 
 
-    const [cart] = useContext(CartContext);
+    let [cart] = useContext(CartContext);
     let price = [];
 
 
