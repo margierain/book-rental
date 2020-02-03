@@ -1,6 +1,7 @@
 import React from 'react';
 import { StoryOneCart } from './storyOne';
 import { StoryTwoCart } from './storyTwo';
+import { StoryThreeCart } from './storyThree';
 
 export const Cart = () => {
   return (
@@ -11,6 +12,9 @@ export const Cart = () => {
       <br/>
       <h4>Story 2</h4>
       <StoryTwoCart/>
+      <br/>
+      <h4>Story 3</h4>
+      <StoryThreeCart/>
       <br/>
     </div>
   )
