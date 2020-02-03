@@ -67,8 +67,9 @@ export const Book = props => {
               type="number"
               name="duration"
               value={values.duration}
-              placeholder="Duration"
+              placeholder="0"
               onChange={handleInputChange}
+              min="0"
               required
             />
             <label>Number of books your renting: </label>
@@ -77,8 +78,9 @@ export const Book = props => {
               type="number"
               name="bookNum"
               value={values.bookNum}
-              placeholder="Book Number"
+              placeholder="0"
               onChange={handleInputChange}
+              min="0"
               required
             />
             <button className="SubmitField" type="submit">Add to cart</button>
