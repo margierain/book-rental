@@ -38,10 +38,10 @@ export const StoryThreeCart = () => {
             if (item.type === 'fiction') {
             price.push(item.duration * fictionBookPrice * item.bookNum)
             }
-            if (item.type === 'regular' && item.duration >= 2) {
+            if (item.type === 'regular' && item.duration > 2) {
                 price.push((2 * regularBookFirst2Days * item.bookNum) + ((item.duration-3) * regularBookPrice))
             }
-            if (item.type === 'regular' && item.duration < 2) {
+            if (item.type === 'regular' && item.duration <= 2) {
                 price.push(minimumRegularBookCharge * item.bookNum)
             }
         })
