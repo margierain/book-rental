@@ -3,7 +3,7 @@ import { CartContext } from "./cartContext";
 
 export const StoryOneCart = () => {
   const bookPrice = 1;
-  const [cart] = useContext(CartContext);
+  const [cart] = React.useContext(CartContext);
 
   let price = [];
   cart.map(item => {

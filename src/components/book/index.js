@@ -28,7 +28,10 @@ const BookList = () => {
             </div>
             ):(
                 <div>
-                    <p>No Books</p>
+                    <p>No Books Yet</p>
+                    <div className="spinner-border" role="status">
+                       <span className="sr-only">Loading...</span>
+                    </div>
                 </div>
             )
         }
